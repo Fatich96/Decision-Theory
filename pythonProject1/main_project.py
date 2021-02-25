@@ -1,4 +1,3 @@
-#Libraries
 from nltk.stem.wordnet import WordNetLemmatizer
 from nltk.corpus import stopwords
 from nltk.tag import pos_tag
@@ -54,7 +53,6 @@ if __name__ == '__main__':
     positive_tweet_tokens= positive_tweets["Text"].apply(tt.tokenize)
     negative_tweet_tokens = negative_tweets["Text"].apply(tt.tokenize)
     
-    #Import the list of the english stopwords
     stop_words=stopwords.words("english")
 
     #Creates two empty lists 
